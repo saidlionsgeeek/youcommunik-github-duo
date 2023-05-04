@@ -1,0 +1,12 @@
+@import "../../node_modules/bootstrap/scss/functions"
+@import "../../node_modules/bootstrap/scss/variables"
+
+//* Mes variables couleurs :
+$blue: #334d5c
+
+//* Notre customisations des couleurs :
+$custom-colors: ("dark-blue" : $blue ,)
+
+//* Fusionner les informations avec celles de bootstrap :
+$theme-colors: map-merge($theme-colors , $custom-colors)
+

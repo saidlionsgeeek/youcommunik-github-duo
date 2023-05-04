@@ -38,6 +38,7 @@
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
+  --bs-dark-blue: #334d5c;
   --bs-primary-rgb: 13, 110, 253;
   --bs-secondary-rgb: 108, 117, 125;
   --bs-success-rgb: 25, 135, 84;
@@ -46,6 +47,7 @@
   --bs-danger-rgb: 220, 53, 69;
   --bs-light-rgb: 248, 249, 250;
   --bs-dark-rgb: 33, 37, 41;
+  --bs-dark-blue-rgb: 51, 77, 92;
   --bs-white-rgb: 255, 255, 255;
   --bs-black-rgb: 0, 0, 0;
   --bs-body-color-rgb: 33, 37, 41;
@@ -2938,6 +2940,23 @@ textarea.form-control-lg {
   --bs-btn-disabled-border-color: #212529;
 }
 
+.btn-dark-blue {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #334d5c;
+  --bs-btn-border-color: #334d5c;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #2b414e;
+  --bs-btn-hover-border-color: #293e4a;
+  --bs-btn-focus-shadow-rgb: 82, 104, 116;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #293e4a;
+  --bs-btn-active-border-color: #263a45;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #334d5c;
+  --bs-btn-disabled-border-color: #334d5c;
+}
+
 .btn-outline-primary {
   --bs-btn-color: #0d6efd;
   --bs-btn-border-color: #0d6efd;
@@ -3071,6 +3090,23 @@ textarea.form-control-lg {
   --bs-btn-disabled-color: #212529;
   --bs-btn-disabled-bg: transparent;
   --bs-btn-disabled-border-color: #212529;
+  --bs-gradient: none;
+}
+
+.btn-outline-dark-blue {
+  --bs-btn-color: #334d5c;
+  --bs-btn-border-color: #334d5c;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #334d5c;
+  --bs-btn-hover-border-color: #334d5c;
+  --bs-btn-focus-shadow-rgb: 51, 77, 92;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #334d5c;
+  --bs-btn-active-border-color: #334d5c;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #334d5c;
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: #334d5c;
   --bs-gradient: none;
 }
 
@@ -4686,6 +4722,15 @@ textarea.form-control-lg {
   color: #101214;
 }
 
+.alert-dark-blue {
+  --bs-alert-color: #1f2e37;
+  --bs-alert-bg: #d6dbde;
+  --bs-alert-border-color: #c2cace;
+}
+.alert-dark-blue .alert-link {
+  color: #19252c;
+}
+
 @keyframes progress-bar-stripes {
   0% {
     background-position-x: 1rem;
@@ -5088,6 +5133,20 @@ textarea.form-control-lg {
   color: #fff;
   background-color: #141619;
   border-color: #141619;
+}
+
+.list-group-item-dark-blue {
+  color: #1f2e37;
+  background-color: #d6dbde;
+}
+.list-group-item-dark-blue.list-group-item-action:hover, .list-group-item-dark-blue.list-group-item-action:focus {
+  color: #1f2e37;
+  background-color: #c1c5c8;
+}
+.list-group-item-dark-blue.list-group-item-action.active {
+  color: #fff;
+  background-color: #1f2e37;
+  border-color: #1f2e37;
 }
 
 .btn-close {
@@ -6646,6 +6705,11 @@ textarea.form-control-lg {
   background-color: RGBA(33, 37, 41, var(--bs-bg-opacity, 1)) !important;
 }
 
+.text-bg-dark-blue {
+  color: #fff !important;
+  background-color: RGBA(51, 77, 92, var(--bs-bg-opacity, 1)) !important;
+}
+
 .link-primary {
   color: #0d6efd !important;
 }
@@ -6700,6 +6764,13 @@ textarea.form-control-lg {
 }
 .link-dark:hover, .link-dark:focus {
   color: #1a1e21 !important;
+}
+
+.link-dark-blue {
+  color: #334d5c !important;
+}
+.link-dark-blue:hover, .link-dark-blue:focus {
+  color: #293e4a !important;
 }
 
 .ratio {
@@ -7161,6 +7232,11 @@ textarea.form-control-lg {
 .border-dark {
   --bs-border-opacity: 1;
   border-color: rgba(var(--bs-dark-rgb), var(--bs-border-opacity)) !important;
+}
+
+.border-dark-blue {
+  --bs-border-opacity: 1;
+  border-color: rgba(var(--bs-dark-blue-rgb), var(--bs-border-opacity)) !important;
 }
 
 .border-white {
@@ -8025,6 +8101,11 @@ textarea.form-control-lg {
   color: rgba(var(--bs-dark-rgb), var(--bs-text-opacity)) !important;
 }
 
+.text-dark-blue {
+  --bs-text-opacity: 1;
+  color: rgba(var(--bs-dark-blue-rgb), var(--bs-text-opacity)) !important;
+}
+
 .text-black {
   --bs-text-opacity: 1;
   color: rgba(var(--bs-black-rgb), var(--bs-text-opacity)) !important;
@@ -8114,6 +8195,11 @@ textarea.form-control-lg {
 .bg-dark {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.bg-dark-blue {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-dark-blue-rgb), var(--bs-bg-opacity)) !important;
 }
 
 .bg-black {
